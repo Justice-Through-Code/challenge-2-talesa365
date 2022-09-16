@@ -5,7 +5,7 @@ ingredient_1 = 'milk'
 ingredient_2 = 'eggs'
 ingredient_3 = 'flour'
 ingredient_4 = 'sugar'
-
+ingrediets = (f'{ingredient_1, ingredient_2, ingredient_3, ingredient_4}')
 
 def print_ingredients():  # Ways to work with strings/printing
     # Those are the right ingredients, aren't they? Let's print them out a few different ways to check
@@ -20,25 +20,24 @@ def print_ingredients():  # Ways to work with strings/printing
       print (f'{ingredient_1, ingredient_2, ingredient_3, ingredient_4}')
 print_ingredients()
 
-def confirm_ingredients():  # String methods
+def confirm_ingredients():  # String methods 
     # 2.1 Save the f-string you wrote above into a variable called `ingredients`.
-    
     # Aha, that's the issue! We need to use butter, not milk.
     # 2.2 In a print statement, use one of the string methods from class to replace 'milk' with 'butter'
-
+    print(ingredient_1 .replace("milk", "butter"))
     # Hmm, when we use a string method in a print statement, does it change the string in our variable?
     # 2.3 Use a string method to count the number of times that 'milk' appears in our string.
-
+    print(ingredient_1.count())
     # 2.4 Let's print out our `ingredients` variable again just to be sure.
-
+    print(ingrediets)
     # 'milk' is still in there! To save our changes to the string, we'll need to update the variable.
     # 2.5 Update our `ingredients` variable using the replace method, the same way we printed it out in step 2.2
-    
+    print(ingrediets.replace("milk", "butter"))
     # 2.6 Print `ingredients` to make sure the change stuck this time.
-
+    print(ingrediets)
     # 2.7 That looks better. Let's make it official: use another string method to 
     # print the string in the `ingredients` variable in all-caps now that it's right.
-
+    print(ingrediets.upper())
 
 def favorite_bake():  # User Input/Type conversion
     # The beauty of these ingredients is that you can make tons with them. 
