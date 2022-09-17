@@ -20,7 +20,7 @@ def print_ingredients():  # Ways to work with strings/printing
       print(ingredient_1, ingredient_2, ingredient_3, ingredient_4 )
       print(ingredient_1, " ", ingredient_2, " ", ingredient_3, " ",ingredient_4 )
       print (f'{ingredient_1, ingredient_2, ingredient_3, ingredient_4}')
-print_ingredients()
+#print_ingredients()
 
 def confirm_ingredients():  # String methods 
     # 2.1 Save the f-string you wrote above into a variable called `ingredients`.
@@ -40,7 +40,7 @@ def confirm_ingredients():  # String methods
     # 2.7 That looks better. Let's make it official: use another string method to 
     # print the string in the `ingredients` variable in all-caps now that it's right.
     print(ingrediets.upper())
-confirm_ingredients()
+#confirm_ingredients()
 
 def favorite_bake():  # User Input/Type conversion
     # The beauty of these ingredients is that you can make tons with them. 
@@ -60,5 +60,6 @@ def favorite_bake():  # User Input/Type conversion
     # What's missing from the first print statement to allow us to use a variable inside a string?
     # Use `type conversion` to fix the second one
     
-    # print('Ooooh, {baked_good}s are delicious!')
-    # print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
+    print(f'Ooooh, {baked_good}s are delicious!')
+    print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
+#favorite_bake()
