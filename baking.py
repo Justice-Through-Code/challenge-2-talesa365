@@ -6,6 +6,8 @@ ingredient_2 = 'eggs'
 ingredient_3 = 'flour'
 ingredient_4 = 'sugar'
 ingrediets = (f'{ingredient_1, ingredient_2, ingredient_3, ingredient_4}')
+baked_good = input('What is your favorite baked good?')
+frequency = input("")
 
 def print_ingredients():  # Ways to work with strings/printing
     # Those are the right ingredients, aren't they? Let's print them out a few different ways to check
@@ -38,6 +40,7 @@ def confirm_ingredients():  # String methods
     # 2.7 That looks better. Let's make it official: use another string method to 
     # print the string in the `ingredients` variable in all-caps now that it's right.
     print(ingrediets.upper())
+confirm_ingredients()
 
 def favorite_bake():  # User Input/Type conversion
     # The beauty of these ingredients is that you can make tons with them. 
@@ -45,13 +48,13 @@ def favorite_bake():  # User Input/Type conversion
 
     # 3.1 Create a variable called `baked_good`, that saves the user's input to the question:
     # What is your favorite baked good?
-
+    print(f'{baked_good}')
     # 3.2 Create a second variable called `frequency` that asks the user:
     # Roughly how many times a month do you eat <baked_good>s? <-- use your `baked_good` variable in an f-string here
-
+    print(f'{frequency}')
     # When the user inputs a number, what data type is it saved as?
     # 3.3 Print out the _type_ of the `frequency` variable to check.
-
+    print(type(frequency))
     # 3.4 Uncomment the print statements below, and get them to run WITHOUT changing the content--
     # HINTS: 
     # What's missing from the first print statement to allow us to use a variable inside a string?
