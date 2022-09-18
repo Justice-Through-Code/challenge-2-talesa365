@@ -14,16 +14,16 @@ def print_ingredients():  # Ways to work with strings/printing
     print(ingredient_1, ingredient_2, ingredient_3, ingredient_4 )
     # 1.2 Using one print statement, use string concatenation to print the ingredients
       # as a single string (make sure to add a space between each ingredient!)
-    print(ingredient_1,  ingredient_2,  ingredient_3, ingredient_4 )
+    print(ingredient_1+ " " + ingredient_2 + " " +ingredient_3 + " " + ingredient_4 )
       # 1.3 Using one print statement, use an f-string to print the ingredients
     # as a single string (make sure to add a space between each ingredient!)\
-    print (f'{ingredient_1," ", ingredient_2, " ", ingredient_3," ", ingredient_4}')
+    print (f'{ingredient_1} {ingredient_2} {ingredient_3} {ingredient_4}')
      
 print_ingredients()
 
 def confirm_ingredients():  # String methods 
     # 2.1 Save the f-string you wrote above into a variable called `ingredients`.
-    ingredients = (f'{ingredient_1, ingredient_2,  ingredient_3, ingredient_4}')
+    ingredients = (f'{ingredient_1} {ingredient_2}  {ingredient_3} {ingredient_4}')
     # Aha, that's the issue! We need to use butter, not milk.
     # 2.2 In a print statement, use one of the string methods from class to replace 'milk' with 'butter'
     print(ingredient_1 .replace("milk", "butter"))
@@ -34,8 +34,8 @@ def confirm_ingredients():  # String methods
     print(ingredients)
     # 'milk' is still in there! To save our changes to the string, we'll need to update the variable.
     # 2.5 Update our `ingredients` variable using the replace method, the same way we printed it out in step 2.2pie
-    
-    print(ingredients.replace("milk", "butter"))
+    ingredients = ingredients.replace("milk", "butter")
+    print(ingredients)
     # 2.6 Print `ingredients` to make sure the change stuck this time.
     print(ingredients)
     # 2.7 That looks better. Let's make it official: use another string method to 
@@ -61,7 +61,7 @@ def favorite_bake():  # User Input/Type conversion
     # HINTS: 
     # What's missing from the first print statement to allow us to use a variable inside a string?
     # Use `type conversion` to fix the second one
-    
+    frequency = int(frequency)
     print(f'Ooooh, {baked_good}s are delicious!')
     print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
 favorite_bake()
