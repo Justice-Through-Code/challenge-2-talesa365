@@ -19,14 +19,14 @@ def print_ingredients():  # Ways to work with strings/printing
     # as a single string (make sure to add a space between each ingredient!)\
     print (f'{ingredient_1} {ingredient_2} {ingredient_3} {ingredient_4}')
      
-#print_ingredients()
+print_ingredients()
 
 def confirm_ingredients():  # String methods 
     # 2.1 Save the f-string you wrote above into a variable called `ingredients`.
-    ingredients = (f'{ingredient_1} {ingredient_2}  {ingredient_3} {ingredient_4}')
+    ingredients = (f'{ingredient_1} {ingredient_2} {ingredient_3} {ingredient_4}')
     # Aha, that's the issue! We need to use butter, not milk.
     # 2.2 In a print statement, use one of the string methods from class to replace 'milk' with 'butter'
-    print(ingredient_1 .replace("milk", "butter"))
+    print(ingredient_1.replace("milk", "butter"))
     # Hmm, when we use a string method in a print statement, does it change the string in our variable?
     # 2.3 Use a string method to count the number of times that 'milk' appears in our string.
     print(ingredient_1.count("milk"))
@@ -41,7 +41,7 @@ def confirm_ingredients():  # String methods
     # 2.7 That looks better. Let's make it official: use another string method to 
     # print the string in the `ingredients` variable in all-caps now that it's right.
     print(ingredients.upper())
-#confirm_ingredients()
+confirm_ingredients()
 
 def favorite_bake():  # User Input/Type conversion
      # The beauty of these ingredients is that you can make tons with them. 
@@ -64,4 +64,4 @@ def favorite_bake():  # User Input/Type conversion
     frequency = int(frequency)
     print(f'Ooooh, {baked_good}s are delicious!')
     print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
-#favorite_bake()
+favorite_bake()
